@@ -8,12 +8,7 @@ import TrashIcon from './icons/TrashIcon';
 import Button from './ui/Button';
 import EmptyCartIcon from './icons/EmptyCartIcon';
 
-// ---DEVELOPER NOTE---
-// The key below has been set directly from the user's provided credentials.
-// For a production environment, use environment variables (process.env.PAYSTACK_PUBLIC_KEY).
-// WARNING: The provided key 'pk_live_...' is a LIVE key. For development and testing,
-// it is highly recommended to use a TEST key ('pk_test_...') from your Paystack dashboard.
-const PAYSTACK_PUBLIC_KEY = 'pk_live_b7c2aa9f7969bd49bce5ff2215ec9daa6fcd0852';
+const PAYSTACK_PUBLIC_KEY = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || 'pk_live_b7c2aa9f7969bd49bce5ff2215ec9daa6fcd0852';
 
 declare global {
     interface Window {

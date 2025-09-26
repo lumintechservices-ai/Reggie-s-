@@ -12,6 +12,7 @@ export interface Product {
   nutritionalFacts: Record<string, string>;
   isGlutenFree: boolean;
   isOrganic: boolean;
+  category: string;
   reviews: Review[];
 }
 
